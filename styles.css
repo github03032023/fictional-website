@@ -1,0 +1,334 @@
+/* settings for scrollable container */
+.scrollable-container {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+  
+
+/* Setting the default font family */
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Typography */
+
+/* --------Heading Size-------------*/
+.heading-size{
+    font-size: 2em;
+}
+/* --------Subtext Size-------------*/
+.subtext-size{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.small-content{
+    font-size: 1em;
+    font-weight: bold;
+}
+.small-content-nobold{
+    font-size: 1em;
+}
+/* --------Navbar Font-------------*/
+.navbar-size{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* --------Index Page------------ */
+/* background image of index page */
+.index-bg-image{
+    background-image: url('./assets/images/free-photo-of-people-sitting-at-acc-hanul-madang-park-in-gwangju.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+}
+
+
+/*--------Navbar------------------*/
+.bg {
+    background: #2255ef;
+    width: 100%;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+
+
+#position-navbar {
+    background: transparent !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: 1em;
+}
+
+
+/* Banner Button */
+.banner-btn {
+    background-color: rgb(197, 0, 0);
+    color: #ffffff;
+    padding: 10px 20px;
+    min-height: 50px;
+    min-width: 150px;
+    border: 0;
+    border-radius: 17px;
+    border-color: #c5c5c5;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.banner-btn:hover {
+    color: #000000;
+    transform: rotate(30deg);
+}
+
+
+  /*---------Carousel Image Size----------- */
+  /* .carousel-item img {
+    width: 100%; 
+    height: 60%; 
+    object-fit: cover; 
+    object-position: center; 
+  } */
+
+
+.section-gap {
+    margin-top: 2rem;
+}
+
+
+/* Media Query for iPhone SE (width: 320px or 375px) */
+@media (max-width: 375px) {
+
+    /* Adjust navbar and text for smaller screens */
+    .main-text h1 {
+        font-size: 5px;
+        text-align: center;
+    }
+
+    /* Adjust jumbotron padding */
+    .jumbotron {
+        padding: 1rem .5rem;
+    }
+
+    /* Adjust button sizes */
+    .banner-btn {
+        min-width: 10px;
+        font-size: 3px;
+        padding: 1px 3px;
+    }
+
+}
+
+/* Additional Media Query for smaller screens like iPhone SE (width: 320px) */
+@media (max-width: 320px) {
+    body{
+        margin: auto;
+        padding: auto;
+   }
+    /* Reduce font sizes further */
+    .main-text h1 {
+        font-size: 24px;
+    }
+
+    .banner-btn {
+        min-width: 100px;
+        font-size: 12px;
+    }
+
+    /* Adjust margins for smaller screens */
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Styles for Events */
+
+.event-bg-color{
+    background-color: #6495ed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.card-img-size {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-title {
+    color: white;
+    padding-top: 50px;
+    font-size: 36px;
+    margin-bottom: 60px;
+    text-decoration: solid;
+    text-align: center;
+    font-weight: bold;
+}
+.event-description {
+    color: #00008b;
+    padding-top: 50px;
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-decoration: solid;
+    text-align: center;
+}
+
+/* Media Query for iPhone SE and smaller devices */
+@media (max-width: 375px) {
+    .services-title {
+        /* display: flex;
+        flex-direction: row;
+        min-height: 100vh; */
+        margin: auto;
+        padding: auto;
+    }
+}   
+
+/* Styles of About */
+
+/* background image of about page */
+
+.about-bg-color{
+    background-color: #0056b3;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* #about-content{
+    margin: auto;
+} */
+
+/* Contact */
+
+.form-container {
+    flex: 1;
+}
+
+.contact-bg-image {
+    background-image: url('./assets/images/NewContact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%
+    /* max-width: 100%; */
+
+}
+
+/* Footer Styles */
+/* Sticky footer styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer .social-icons {
+    /* margin-top: 10px; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5rem;
+    /* text-decoration: none; */
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    /* margin: 0 10px; */
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+    transform: scale(1.05); 
+}
+
+.footer-links a:active {
+    color: #0056b3; 
+}
+
+/* Media Query for iPhone SE and smaller devices */
+@media (max-width: 375px) {
+    .contact-body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+
+    .footer .footer-links a {
+        display: flex;
+        gap: 8px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer .social-icons a {
+        margin: 0 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-links {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 14px; /* Smaller font size on small screens */
+        padding: 5px 8px;
+    }
+}

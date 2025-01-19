@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to local css file -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- link to local css font file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- link to bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <section class="container-fluid index-bg-image">
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg" id="position-navbar">
+                <div class="container-fluid">
+                    <div style="width: 80px;cursor: pointer;" class="d-flex align-items-center">
+                        <video src="./assets/animation/Animation - 1737170730858.mp4" alt="aeroplane-web-animation" class="img-fluid"
+                            autoplay loop muted></video>
+                        <a class="navbar-brand d-none d-sm-block fw-bold" ms-2 href="#">Community Connect</a>
+                    </div>
+
+                    <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="index-navbarText">
+                        <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                            <li class="nav-item navbar-size">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                                <a href="index.html" class="nav-link active fw-bold" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!-- jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="d-flex flex-column flex-column align-items-end justify-content-center"
+                style="height: calc(100vh - 100px);">
+                <h1
+                    class="display-4 display-sm-3 display-md-2 text-white fw-bold
+                     typing-animation text-capitalize heading-size">
+                    Connecting Communities <br>
+                    Building Futures
+                </h1>
+                <p class="lead mt-3 p-4 text-white">
+                    <b>
+
+                        Join Community Connect to build meaningful relationships<br>
+                        and enhance your well-being. Experience the power of community <br>
+                        and unlock new opportunities for growth.
+
+                </p>
+                </b>
+                <div class="mt-5">
+                    <a href="#carousel-section">
+                        <button class="banner-btn fs-4">FEATURED EVENTS</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel section -->
+    <section class="container-fluid section-gap mb-5" id="carousel-section">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./assets/images/carnival-night-edited.jpg" class=".d-block w-100 h-100"  alt="Night Carnival">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Live Performances with games and delicious food stalls</h5>
+                        <p>Experience the enchantment of the Night Carnival, a vibrant <br>
+                           celebration that brings together the community for an evening <br>
+                           of entertainment, culture, and fun.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"  data-bs-interval="2000">
+                    <img src="./assets/images/farmers_market.jpg" class=".d-block w-100 h-100" alt="Summer Festival">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Summer Festival & Farmers Market</h5>
+                        <p>Immerse yourself in the vibrant atmosphere of our <br>
+                            Summer Market, a community gathering that celebrates <br>
+                            local artisans, farmers, and entertainers.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item"  data-bs-interval="2000">
+                    <img src="./assets/images/holi-people-gatheringEdited.jpg" class=".d-block w-100 h-100"
+                    alt="Holi Gathering">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Celebrate the vibrant festival of Holi with us.
+                             </h5>
+                        <p>Join the community for a day filled with colors,<br>
+                            music, and fun.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+     <!-- footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Travel Planner. All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

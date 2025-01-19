@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Events</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- link to local css file -->
+     <link rel="stylesheet" href="./styles.css">
+     <!-- link to local css font file -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <!-- link to bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg">
+    <section class="container-fluid">
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg" id="about-navbar">
+                <div class="container-fluid">
+                    <div style="width: 80px;cursor: pointer;" class="d-flex align-items-center">
+                        <video src="./assets/animations/airplane.mp4" alt="aeroplane-web-animation" class="img-fluid"
+                            autoplay loop muted></video>
+                        <a class="navbar-brand d-none d-sm-block" ms-2 fw-bold href="#">Community Connect</a>
+                    </div>
+
+                    <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="index-navbarText">
+                        <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                            <li class="nav-item navbar-size">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                                <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bold" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+    </section>
+
+    <section id="event" class="bg">
+        <div class="card container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="event-title">Services We Provide</h2>
+                        <p class="event-description subtext-size">
+                            Community Connect is a non-profit organization committed to cultivating
+                             a vibrant and inclusive community by organizing engaging local events 
+                             that foster meaningful connections among residents.
+                        </p>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-lg-8">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-2">
+                        <div class="col">
+                            <div class="card w-100 h-100">
+                                <img src="./assets/images/Community Gatherings.jpg"
+                                    class="card-img-top card-img-size" alt="Community Gatherings">
+                                <div class="card-body">
+                                    <h5 class="card-title subtext-size">Community Gatherings and Social Events</h5>
+                                    <p class="card-text small-content-nobold">
+                                        Community Connect organizes various social events aimed at bringing 
+                                        residents together to build relationships and strengthen community
+                                        bonds. These gatherings may include neighborhood picnics, cultural
+                                        festivals, and holiday celebrations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card w-100 h-100">
+                                <img src="./assets/images/EducationWorkshops.jpg"
+                                    class="card-img-top card-img-size" alt="Educational Workshops">
+                                <div class="card-body">
+                                    <h5 class="card-title subtext-size">Educational Workshops and Seminars</h5>
+                                    <p class="card-text small-content-nobold">
+                                        The organization offers workshops and seminars on topics relevant 
+                                        to the community's interests and needs. These educational sessions
+                                        can cover areas such as financial literacy, health and wellness,
+                                        and environmental awareness.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card w-100 h-100">
+                                <img src="./assets/images/volunteer-group.jpg" class="card-img-top card-img-size"
+                                    alt="Volunteer and Outreach Programs">
+                                <div class="card-body">
+                                    <h5 class="card-title subtext-size">Volunteer and Outreach Programs</h5>
+                                    <p class="card-text small-content-nobold">
+                                        Community Connect provides opportunities for residents to engage 
+                                        in volunteer activities, promoting civic engagement and support
+                                        for local initiatives. These programs may involve neighborhood 
+                                        clean-ups, assistance for vulnerable populations, and collaborations
+                                        with other local non-profits.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card w-100 h-100">
+                                <img src="./assets/images/concert.jpg"
+                                    class="card-img-top card-img-size" alt="Arts and Cultural Programs">
+                                <div class="card-body">
+                                    <h5 class="card-title subtext-size">Arts and Cultural Programs</h5>
+                                    <p class="card-text small-content-nobold">
+                                        To celebrate and promote the diverse cultural heritage of the community, 
+                                        Community Connect organizes arts and cultural events. These may feature 
+                                        local artists, music and dance performances, and art exhibitions, fostering
+                                         an appreciation for the arts within the community.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+     <!-- footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Travel Planner. All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

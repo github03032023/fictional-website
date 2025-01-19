@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to local css file -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- link to local css font file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- link to bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+
+<body class="contact-body">
+
+    <section class="container-fluid">
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg" id="about-navbar">
+                <div class="container-fluid">
+                    <div style="width: 80px;cursor: pointer;" class="d-flex align-items-center">
+                        <video src="./assets/animations/airplane.mp4" alt="aeroplane-web-animation" class="img-fluid"
+                            autoplay loop muted></video>
+                        <a class="navbar-brand d-none d-sm-block" ms-2 fw-bold href="#">Community Connect</a>
+                    </div>
+
+                    <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="index-navbarText">
+                        <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                            <li class="nav-item navbar-size">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                                <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bold" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+    </section>
+
+    <section class="container-fluid" id="contact-content">
+        <div class="container form-container contact-bg-image text-white">
+            <h2 class="text-center text- mb-4 subtext-size">Contact Us</h2>
+
+            <form id="contactForm">
+                <div class="container-fluid w-50 h-100 d-grid gap-2 small-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                        <div class="invalid-feedback">
+                            Please enter a subject.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        <div class="invalid-feedback">
+                            Please enter your message.
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submissionModal">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p>@2025 Community Connect. All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="submissionModal" tabindex="-1" aria-labelledby="submissionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="submissionModalLabel">Form Submitted</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for reaching out to us! We will get back to you soon.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Script to Handle Modal -->
+    <script>
+        const form = document.getElementById('contactForm');
+        const modal = new bootstrap.Modal(document.getElementById('submissionModal'));
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent actual form submission
+            modal.show(); // Show the modal
+            form.reset(); // Optionally reset the form
+        });
+    </script>
+</body>
+
+</html>
